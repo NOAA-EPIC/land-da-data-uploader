@@ -35,7 +35,7 @@ Tools which could be be utilized to perform data transferring & partitioning (Mu
 * AWS CLI
 * AWS S3 REST API
 
-In this demontration, the framework will implement Python AWS SDK for transferring the UFS SRW application fixed and input model datasets from the RDHPCS, Orion, to the cloud data storage with low latency. 
+In this demontration, the framework will implement Python AWS SDK for transferring the UFS Land DA application fixed and input model datasets from the RDHPCS, Orion, to the cloud data storage with low latency. 
 
 The AWS SDK will be implemented for the following reasons:
 To integrate with other python scripts.
@@ -51,7 +51,7 @@ Multi-threading & partitioning to the datasets to assist in the optimization in 
 
 __Future Capabilities:__
 
-User can request the Land DA datasets that is applicable to their SRW release version needs -- rather than the full datasets within the Land DA tar folders as Land DA development continues within this project program in the future.
+User can request the Land DA datasets that is applicable to their Land DA release version needs -- rather than the full datasets within the Land DA tar folders as Land DA development continues within this project program in the future.
 
 # Table of Contents
 * [Prerequisites](#Prerequisites)

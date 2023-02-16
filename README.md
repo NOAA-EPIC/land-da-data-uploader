@@ -173,17 +173,21 @@ Within the download, you will find the following directories and files:
 * Demo:
     * 
 * Scripts:
-    * transfer_land_da_tar.py 
-        * Main executable script for extracting & uploading the tar formatted SRW datasets residing on-prem to cloud. Allows user to set a unique key for the tar object supporting the Land DA.
-    * transfer_land_da_data.py 
-        * Main executable script for extracting & uploading the full Land DA datasets residing on-prem to cloud. Sets
-        unique keys for the individual data files supporting the Land DA.
-    * get_land_da_data.py
-        * Extracts the data directories of a tar & partitions data by external model used in the creation of model analysis files. 
-     * upload_data.py
-        * Uploads the UFS Land DA Application via AWS SDK
-    * progress_bar.py
-        * Monitors uploading progress of datasets to cloud   
+    * Modules:
+        * get_land_da_data.py
+            * Extracts the data directories of a tar & partitions data by external model used in the creation of model analysis files. 
+         * upload_data.py
+            * Uploads the UFS Land DA Application via AWS SDK
+        * progress_bar.py
+            * Monitors uploading progress of datasets to cloud   
+    * Main:
+        * upload_file2cloud.py
+            * Main executable script for extracting & uploading the full Land DA datasets residing on-prem to cloud. Sets
+            unique keys for the individual data files supporting the Land DA.
+        * get_objects_list.py
+            * Obtains list of unique data files within a tar file.
+        * delete_cloud_object.py
+            * Main executable script for deleting the objects of the Land DA datasets based on their unique key.
 
 * List of Dependencies: 
     * cloud_xfer_env.yml

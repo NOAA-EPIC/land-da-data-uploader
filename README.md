@@ -73,7 +73,11 @@ User can request the Land DA datasets that is applicable to their Land DA releas
 * The Indy Severe Weather case study datasets per SRW release version were derived from the RDHPCS, Hera.
 
 # Quick Start
-* For demonstration purposes, refer to 'srw_data_xfer2cloud_scripts_demo.ipynb'
+1) Install miniconda per "Environment Setup" section.
+2) Establish AWS credentials.
+3) Save data of interest to migrate to cloud within the repository's "main" folder.
+4) Execute the following command within the terminal to migrate the data: python upload_file2cloud.py -b BUCKET_NAME -f FILE_DIR_TO_MIGRATE_TO_CLOUD_INCLUDING_FILENAME
+
 
 # Environment Setup:
 

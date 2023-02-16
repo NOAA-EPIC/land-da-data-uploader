@@ -78,7 +78,7 @@ Datasets for the Land DA v1.0.0 Release:
 
 # Quick Start
 1) Install miniconda per "Environment Setup" section.
-2) Establish AWS credentials configuration file. See Confluence.
+2) Establish AWS credentials configuration file via the "AWS Command Line Interface (AWS CLI) Credentials Setup" page in Confluence.
 3) Save data of interest to migrate to cloud within the repository's "main" folder & structure the data on-premise as you would like it structured in cloud. For example, the relative directory of "landda-data-2016.tar.gz" should be saved as "current_land_da_release_data/landda-data-2016.tar.gz" within the "main" folder on-premise for its object's key to be set as "current_land_da_release_data/landda-data-2016.tar.gz" in cloud.
 4) Execute the following command within the terminal to migrate the data: python upload_file2cloud.py -b BUCKET_NAME -f FILE_DIR_TO_MIGRATE_TO_CLOUD_INCLUDING_FILENAME
 

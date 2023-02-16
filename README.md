@@ -6,7 +6,6 @@ Data Uploader for
 
 <p align="center">
     <img src="images/header.png" width="350" height="280">
-    <img src="images/header2.png" width="350" height="280">
 </p>
 
 <h5 align="center">

@@ -69,13 +69,17 @@ User can request the Land DA datasets that is applicable to their Land DA releas
     * Refer to [Environment Setup](#Environment-Setup)
 
 # Dataset
-* The ICs, LBCs, Natural Earth, & model's input datasets were derived from the RDHPCS, Orion.
-* The Indy Severe Weather case study datasets per SRW release version were derived from the RDHPCS, Hera.
+Datasets for the Land DA v1.0.0 Release:
+* Model Input Data
+* Observation Data
+* Sample Forcing Data
+* NOAH-MP Offline Data (Model Spec Data for Offline Vector)
+* GFS Tile Space Data (Model Spec Data for FV3 Tiles)
 
 # Quick Start
 1) Install miniconda per "Environment Setup" section.
-2) Establish AWS credentials.
-3) Save data of interest to migrate to cloud within the repository's "main" folder.
+2) Establish AWS credentials configuration file. See Confluence.
+3) Save data of interest to migrate to cloud within the repository's "main" folder & structure the data on-premise as you would like it structured in cloud. For example, the relative directory of "landda-data-2016.tar.gz" should be saved as "current_land_da_release_data/landda-data-2016.tar.gz" within the "main" folder on-premise for its object's key to be set as "current_land_da_release_data/landda-data-2016.tar.gz" in cloud.
 4) Execute the following command within the terminal to migrate the data: python upload_file2cloud.py -b BUCKET_NAME -f FILE_DIR_TO_MIGRATE_TO_CLOUD_INCLUDING_FILENAME
 
 
@@ -187,11 +191,12 @@ Within the download, you will find the following directories and files:
     * Main:
         * upload_file2cloud.py
             * Main executable script for extracting & uploading the full Land DA datasets residing on-prem to cloud. Sets
-            unique keys for the individual data files supporting the Land DA.
+            unique key for the tar.gz data supporting the Land DA. Note: Must save data of interest to migrate to cloud within the repository's "main" folder 
+            & structure it on-premise as you would like it structured in cloud. For example, the relative directory of "landda-data-2016.tar.gz" should be saved as   "current_land_da_release_data/landda-data-2016.tar.gz" within the "main" folder on-premise for the object's key to be set as "current_land_da_release_data/landda-data-2016.tar.gz" in cloud.
         * get_objects_list.py
-            * Obtains list of unique data files within a tar file.
+            * Obtains list of unique data files within the Land DA cloud storage
         * delete_cloud_object.py
-            * Main executable script for deleting the objects of the Land DA datasets based on their unique key.
+            * Main executable script for deleting the objects of the Land DA in datasets in cloud based on their unique key.
 
 * List of Dependencies: 
     * cloud_xfer_env.yml

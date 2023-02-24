@@ -6,7 +6,7 @@ import argparse
 
 # User Inputs.
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-b", "--bucket", help="Object's key. Type: String. Options: 'srw', 'land-da', etc.")
+argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Options: 'srw', 'land-da', etc.")
 args = argParser.parse_args()
 
 # Instantiate Class Object.

@@ -280,7 +280,7 @@ class UploadData():
         """
             
         # Copy original object as a new object & key.
-        self.s3.Object(self.bucket_name, new_key_path).copy_from(CopySource=source_key_path)
+        self.s3.Object(self.bucket_name, new_key_path).copy_from(CopySource=f'{self.bucket_name}/{source_key_path}')
         
         # Delete original object & its key.
         self.s3.Object(self.bucket_name, source_key_path).delete()

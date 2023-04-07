@@ -10,8 +10,7 @@ Data Uploader for
 
 <h5 align="center">
     
-[Prerequisites](#Prerequisites) • [Dataset](#Dataset) • [Quick Start](#Quick-Start) • [Environment Setup](#Environment-Setup) • [Status](#Status)
- • [What's Included](#What's-Included) • [Documentation](#Documentation) • [References](#Reference(s))
+[About](#About) • [Prerequisites](#Prerequisites) • [Quick Start](#Quick-Start) • [Environment Setup](#Environment-Setup) • [What's Included](#What's-Included) • [Status](#Status) • [Version](#Version)
 
 </h5>
 
@@ -47,26 +46,15 @@ The framework will be able to perform the following actions:
 
 Multi-threading & partitioning to the datasets to assist in the optimization in uploading performance of the datasets from on-prem to cloud. 
 
-
 __Future Capabilities:__
 
 User can request the Land DA datasets that is applicable to their Land DA release version needs -- rather than the full datasets within the Land DA tar folders as Land DA development continues within this project program in the future.
 
-# Table of Contents
-* [Prerequisites](#Prerequisites)
-* [Dataset](#Dataset)
-* [Quick Start](#Quick-Start)
-* [Environment Setup](#Environment-Setup)
-* [Status](#Status)
-* [What's Included](#What's-Included)
-* [Documentation](#Documentation)
-* [References](#Reference(s))
-
 # Prerequisites
-* Python 3.9
 * Setting up AWS CLI configurations for uploading to Cloud.
 * Setting up conda environment w/in RDHPCS.
     * Refer to [Environment Setup](#Environment-Setup)
+* [![Version badge](https://img.shields.io/badge/Python-3.9-blue.svg)](https://shields.io/)
 
 # Dataset
 Datasets for the Land DA v1.0.0 Release:
@@ -174,14 +162,8 @@ To create a .yml file, execute the following commands:
 
     * conda env export > [ENVIRONMENT FILENAME].yml
 
-# Status
-[![Version badge](https://img.shields.io/badge/Python-3.9-blue.svg)](https://shields.io/)
-[![Build badge](https://img.shields.io/badge/Build--gray.svg)](https://shields.io/)
-
 # What's Included
 Within the download, you will find the following directories and files:
-* Demo:
-    * 
 * Scripts:
     * Modules:
         * get_land_da_data.py
@@ -203,7 +185,16 @@ Within the download, you will find the following directories and files:
 * List of Dependencies: 
     * cloud_xfer_env.yml
 
-# Documentation
+# Status
+    
+This repository is under development and has not yet been released to the public. Interested parties are welcome to explore the code and see what we are working on. However, user support is not available for this tool, and outside contributions to the repository are not being accepted at this time. We look forward to providing user support after a future public release (date TBD), at which point, community contributions will also be welcome. In the meantime, users may use this application at their own risk.
+
+DISCLAIMER
+
+The United States Department of Commerce (DOC) GitHub project code is provided on an “as is” basis and the user assumes responsibility for its use. DOC has relinquished control of the information and no longer has a responsibility to protect the integrity, confidentiality, or availability of the information. Any claims against the Department of Commerce stemming from the use of its GitHub project will be governed by all applicable Federal laws. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation, or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+
+[![Development badge](https://img.shields.io/badge/development-passing-green)](https://shields.io/)
+[![Build badge](https://img.shields.io/badge/build-passing-blue)](https://shields.io/)
 
 # Version:
 * Draft as of 02/16/23

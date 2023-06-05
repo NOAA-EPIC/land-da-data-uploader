@@ -1,3 +1,7 @@
+##
+## <<< A placeholder example should specific needs be made to customize the Land DA framework. Status from Release Team: TBD >>>
+##
+
 import os 
 import pickle
 from collections import defaultdict

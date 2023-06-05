@@ -6,7 +6,7 @@ import argparse
 
 # User Inputs.
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Options: 'srw-app', 'land-da', etc.")
+argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Options: 'srw', 'land-da', etc.")
 argParser.add_argument("-k", "--key", help="Object's key. Type: String. Ex: k = '###/###/[filename].[file_format]'")
 args = argParser.parse_args()
 

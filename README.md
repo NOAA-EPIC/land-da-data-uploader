@@ -44,11 +44,11 @@ __Capabilities:__
 
 The framework will be able to perform the following actions:
 
-Multi-threading & partitioning to the datasets to assist in the optimization in uploading performance of the datasets from on-prem to cloud. 
+Multi-threading & partitioning the datasets to assist in the optimization in uploading performance of the datasets from on-premise to cloud. 
 
 __Future Capabilities:__
 
-User can request the Land DA datasets that is applicable to their Land DA release version needs -- rather than the full datasets within the Land DA tar folders as Land DA development continues within this project program in the future.
+Can make the framework customizable so that users can request the Land DA datasets that is applicable to their Land DA release version needs -- rather than the full datasets within the Land DA tar folders as Land DA development continues within this project program in the future.
 
 # Prerequisites
 * Setting up AWS CLI configurations for uploading to Cloud.

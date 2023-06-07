@@ -63,6 +63,8 @@ Datasets for the Land DA v1.0.0 Release:
 * Sample Forcing Data
 * NOAH-MP Offline Data (Model Spec Data for Offline Vector)
 * GFS Tile Space Data (Model Spec Data for FV3 Tiles)
+* Data used in comparing the validated dataset to the user's experiment output dataset (__comps__ data)
+* Data required to run the comparison step (__inps__ data)
 
 # Quick Start
 1) Install miniconda per "Environment Setup" section.

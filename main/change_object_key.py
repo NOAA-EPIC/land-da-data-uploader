@@ -11,7 +11,7 @@ t-data-2016.tar.gz
 """
 
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Options: 'srw', 'land-da', etc.")
+argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Options: 'land-da'")
 argParser.add_argument("-k_current", "--current_key", help="Object's current key. Type: String. Ex: k = '###/###/[filename].[file_format]'")
 argParser.add_argument("-k_new", "--new_key", help="Object's new key. Type: String. Ex: k = '###/###/[filename].[file_format]'")
 args = argParser.parse_args()

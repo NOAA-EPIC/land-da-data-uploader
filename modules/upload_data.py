@@ -1,4 +1,3 @@
-# S3 resource to connect to S3 via SDK
 import boto3
 from boto3.s3.transfer import TransferConfig
 import botocore
@@ -38,13 +37,7 @@ class UploadData():
         # List of data files' relative directory paths on-prem. 
         self.file_relative_dirs = file_relative_dirs
         
-        if use_bucket == 'rt':
-            self.bucket_name = 'noaa-ufs-regtests-pds'
-            self.profile = 'default'
-        elif use_bucket == 'srw':
-            self.bucket_name = 'noaa-ufs-srw-pds'
-            self.profile = 'srw-app'
-        elif use_bucket == 'land-da':
+        if use_bucket == 'land-da':
             self.bucket_name = 'noaa-ufs-land-da-pds'
             self.profile = 'land-da-app'
         else:

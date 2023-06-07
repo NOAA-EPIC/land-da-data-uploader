@@ -7,7 +7,7 @@ import argparse
 
 # User Inputs.
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Option: 'land-da')
+argParser.add_argument("-b", "--bucket", help="Object's bucket label. Type: String. Option: 'land-da'")
 argParser.add_argument("-k", "--key", help="Object's key. Type: String. Currently, the key should be set as the file of interest's relative directory path on your local system.  Ex: k = '###/###/[filename].[file_format]'")
 args = argParser.parse_args()
 
